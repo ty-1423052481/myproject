@@ -28,6 +28,7 @@ $documnet_width:1200px;
 
 //头部
 #header{
+    margin: 0 auto;
     width:$page_width;
     height: 30px;
     background: #f8f8f8;
@@ -127,6 +128,7 @@ $documnet_width:1200px;
 
 //搜索框
 #search{
+    margin: 0 auto;
     width:$documnet_width;
     height: 120px;
     background: white;
@@ -272,57 +274,517 @@ $documnet_width:1200px;
 
 //section_1
 #section_1{
+    margin: 0 auto;
     width: $page_width;
     height: 450px;
-    
+    border-top: 1px solid #dd00a7;
+    position: relative;
+    img{
+        width: 300px;
+        height: 450px;
+    }
+}
+#section_1 .img-left{
+    position: absolute;
+    left: 51.5px;
+    top: 0;
+}
+#section_1 .img-right{
+    position: absolute;
+    right: 51.5px;
+    top: 0;
 }
 #section_1 .section_1_main{
     width: $documnet_width;
     height: 450px;
     margin: 0 auto;
     background: lightblue; 
+    border-bottom: 1px solid #cccccc;
+
 }
 #section_1 .section_1_main .section_1_left{
     width: 200px;
     height: 100%;
     background: #585858;
+    ul{
+        li{
+            width: 200px;
+            height: 30px;
+            h3{
+                widows: 185px;
+                height: 30px;
+                display: block;
+                margin-left: 5px;
+                line-height: 30px;
+                padding-left: 15px;
+                a{
+                    color: #fff;
+                    font-size: 14px;
+                    margin-right: 3px;
+                }
+            }
+        }
+    }
+}
+#section_1 .section_1_main .section_1_left ul li a:hover{
+    color: #dd00a7;
 }
 
 //section_2
 #section_2{
     width: $page_width;
     height: 272px;
-    background-color: lightcoral;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+
+    .left_img{
+        position: absolute;
+        top: 0;
+        left: 51.5px;
+    }
+    .right_img{
+        position: absolute;
+        top: 0;
+        right: 51.5px;
+    }
 }
+#section_2 .section_2_all{
+    width: $documnet_width;
+    height: 272px;
+    background-color: #fff;
+    margin: 20px auto 0 auto;
+    
+    .section_2_left{
+        border: 1px solid #cccccc;
+        border-top: 1px solid #f5004b;
+        width: 950px;
+        height: 252px;
+        float: left;
+        box-sizing: border-box;
+        .section_2_left_top{
+            width: 950px;
+            height: 40px;
+            .left{
+                width: 202px;
+                height: 40px;
+                float: left;
+                img{
+                    width: 40px;
+                    height: 40px;
+                    margin-left: 5px;
+                    float: left;
+                }
+                h3{
+                    font-size: 18px;
+                    color: #f5004b;
+                    line-height: 40px;
+                }
+            }
+            .right{
+                width: 239px;
+                height: 40px;
+                float: right;
+                h5{
+                    width: 91px;
+                    height: 40px;
+                    display: block;
+                    font-size: 14px;
+                    color: #f5004b;
+                    line-height: 40px;
+                    padding-right: 7px;
+                }
+            }
+        }
+        .section_2_left_bottom{
+            width: 950px;
+            height: 212px;
+            border-top: 1px solid #cccccc;
+        }
+    }
+    .section_2_right{
+        // border-top: 1px solid #f5004b;
+        width: 250px;
+        height: 252px;
+        float: left; 
+        // border: 1px solid #cccccc;
+        box-sizing: border-box;       
+        img{
+            width: 240px;
+            height: 252px;
+            float: right;
+        }   
+    }
+}
+
+
+
+
+
+
+
 //section_3
 #section_3{
     width: $page_width;
     height: 500px;
-    background-color: lightgreen;
+    // background-color: lightgreen;
+    margin: 0 auto;
+    .section_3_section{
+        width: $documnet_width;
+        height: 500px;
+        position: relative;
+        margin: 0 auto;
+        .img_1{            
+            position: absolute;
+            top: 0;
+            left: -300px;
+            
+        }
+        .img_2{
+            position: absolute;
+            top: 80px;
+            left: 0;
+        }
+        .img_3{
+            position: absolute;
+            top: 290px;
+            left: 0;
+        }
+        .img_4{
+            position: absolute;
+            top: 80px;
+            left: 200px;
+        }
+        .img_5{
+            position: absolute;
+            top: 80px;
+            left: 400px;
+        }
+        .img_6{
+            position: absolute;
+            top: 80px;
+            left: 600px;
+        }
+        .img_7{
+            position: absolute;
+            top: 80px;
+            left: 800px;
+        }
+        .img_8{
+            position: absolute;
+            top: 80px;
+            left: 1000px;
+        }
+        .img_9{
+            position: absolute;
+            top: 290px;
+            left: 200px;
+        }
+        .img_10{
+            position: absolute;
+            top: 290px;
+            left: 400px;
+        }
+        .img_11{
+            position: absolute;
+            top: 290px;
+            left: 600px;
+        }
+        .img_12{
+            position: absolute;
+            top: 290px;
+            left: 800px;
+        }
+        .img_13{
+            position: absolute;
+            top: 290px;
+            left: 1000px;
+        }
+        .img_14{
+            position: absolute;
+            top: 0;
+            right: -300px;
+        }
+        .img15{
+            position: absolute;
+            top: -80px;
+            left: 0px;
+        }
+    }
 }
+
 
 //section_4
 #section_4{
-    width: $documnet_width;
+    width: $page_width;
     height: 481px;
-    background-color: lightslategray;
     margin: 0 auto;
+    .section_4_main{
+        width: $documnet_width;
+        height: 481px;
+        margin: 0 auto; 
+        display: flex;
+        justify-content: space-between;
+         h2{
+                    float: left;
+                    text-align: center;
+                    margin-top: 28px;
+                    font-size: 18px;
+                    color: #333333;
+                    margin-right: 10px;
+                }
+            span{
+                    float: left;
+                    margin-top: 28px;
+                    text-align: center;
+                    font-size: 20px;
+                    color: #333333;
+                }      
+        .section_4_left{
+            width: 420px;
+            height: 100%;
+            margin-right: 10px;         
+            .left_top{
+                width: 420px;
+                height: 60px;
+                float: left;               
+            }
+            .left_bottom{
+                width: 420px;
+                height: 421px;
+                box-sizing: border-box;
+                margin-top: 60px;
+                position: relative;
+                border: 1px solid #cccccc;  
+                .right_img{
+                    float: right; 
+
+                }
+                .bottom_img{
+                    position: absolute;
+                    right: 0px;
+                    top: 209px;
+                }
+                
+            }
+        }       
+        .section_4_center{
+            width: 420px;
+            height: 481px;
+            margin-right: 10px;
+            box-sizing: border-box;
+            .center_top{
+                width: 420px;
+                height: 60px;
+            }
+            .center_bottom{
+                width: 420px;
+                height: 421px;
+                position: relative;
+                border: 1px solid #cccccc;
+                box-sizing: border-box;
+                .right_img{
+                    float: right;
+                }
+                .bottom_img{
+                    position: absolute;
+                    right: 0px;
+                    top: 209px;
+                } 
+               
+            }
+        }
+        .section_4_right{
+            width: 340px;
+            height: 481px;
+            box-sizing: border-box;
+            .right_top{
+                width: 340px;
+                height: 60px;
+            }
+            .right_bottom{
+                width: 340px;
+                height: 421px;
+                position: relative;
+                border: 1px solid #cccccc;
+                display: flex;
+                justify-content: space-between;
+                box-sizing: border-box;
+                .left{
+                   float: left;  
+                   width: 219px; 
+                   height: 420px;
+                //    border: 1px solid #cccccc;           
+                }
+                .right{
+                    width: 118px;
+                    height: 420px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    box-sizing: border-box;
+                    a{
+                        display: block;
+                        width: 118px;
+                        height: 60px;
+                        border: 1px dashed #cccccc;
+                        float: right;
+                    }
+                    a :last-child{
+                        border-bottom: none;
+                    }
+                    a img{
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }
 }
 //广告样式2
 #ad2{
-    width: $documnet_width;
+    width: $page_width ;
     height: 110px;
-    background-color: lime;
     margin: 0 auto;
+    .ad2_main{
+        width: $documnet_width;
+        height: 110px;
+        margin: 20px auto 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        ul{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
 }
 
 
 //section_5
 #section_5{
-    width: $documnet_width;
+    width: $page_width;
     height: 326px;
+    // margin: 0 auto;
+    // background-color: lemonchiffon;
+    .section_5_main{
+        width: $documnet_width;
+        height: 100%;
+        margin: 0 auto;
+        .top{
+            width: $documnet_width;
+            height: 60px;
+            line-height: 80px;
+            h2{
+                float: left;
+                font-size: 18px;
+                color: #333;          
+            }
+            span{
+                // display: block;
+                padding: 27px 0 0 9px;
+                color: #ccc;
+                font-size: 20px;
+            }
+        }
+        .bottom{
+            width: $documnet_width;
+            height: 266px;
+            border: 1px solid #eeeeee;
+            box-sizing: border-box;
+            ul{
+                width: $documnet_width;
+                height: 264px;
+                display: flex;
+                justify-content: space-evenly;
+                li{
+                    width: 200px;
+                    height: 224px;
+                    border-right: 1px dashed #eeeeee;
+                }
+                li:last-child{
+                    border: none;
+                }
+                
+            }
+        }
+    }
+}
+
+#list{
+    width: $page_width;
+    height: 466px;
     margin: 0 auto;
-    background-color: lemonchiffon;
+    overflow: hidden;
+    .bg{
+        width: $documnet_width;
+        height: 426px;
+        background: #f7f7f7;
+        margin: 0 auto;
+        margin-top: 40px;
+        overflow: hidden;
+        .main{
+            width: $documnet_width;
+            height: 376px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            h2{
+                        width: 72px;
+                        height: 38px;
+                        float: left;
+                        line-height: 38px;
+                        color: #333333;
+                        font-size: 18px;
+                    }    
+                    p{
+                        width: 70px;
+                        height: 30px;
+                        float: right;
+                        a{
+                            color: #888;
+                            font-size: 14px;
+                            line-height: 50px;
+                            // margin-top: 14px;
+                        }
+                    }
+            // background: lightcoral;
+            .left{
+                width: 954px;
+                height: 376px;
+                // background: white;
+                float: left;
+                .top{
+                    width: 954px;
+                    height: 38px;
+                    
+                }
+                .bottom{
+                    width: 954px;
+                    height: 338px;
+                    ul{
+                        display: flex;
+                        justify-content: space-between;
+                        li{
+                            width: 306px;
+                            height: 338px;
+                            background: white;
+                        }
+                    }
+                }
+                
+            }
+            .right{
+                width: 246px;
+                height: 376px;
+                float: right;
+                .top{
+                    width: 246px;
+                    height: 376px;
+                }
+            }
+        }
+    }
 }
 
 //product
@@ -334,7 +796,7 @@ $documnet_width:1200px;
 //section_6
 #section_6{
     height: 541px;
-    background-color: lightslategrey;
+    // background-color: lightslategrey;
 }
 
 //section_7
