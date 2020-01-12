@@ -300,6 +300,124 @@ $documnet_width:1200px;
     margin: 0 auto;
     background: lightblue; 
     border-bottom: 1px solid #cccccc;
+    position: relative;
+    #nav_2{
+    width: 999px;
+    height: 448px;
+    position: absolute;
+    top: 0;
+    left: 199px;
+    border-left: none;
+    border: 1px solid #ccc;
+    border-left: none;
+    display: none;
+    .nav_2_left{
+        width: 789px;
+        height: 448px;
+        background-color: #fbfbfb;
+        // float: left;
+        li{
+            float: left;
+            height: 22px;
+            width: 50px;
+            margin-right: 20px;
+            border-right: 1px solid #e744c1;
+        }
+
+        .ul111{
+            padding: 20px 0 7 20px;
+            li{
+                background-color: #f5004b;
+                padding: 0 10px;
+                font-size: 12px;
+                line-height: 22px;
+                color: #fff;
+            }
+        }
+        // .ul111{
+        //     height: 20px;
+        //     padding: 20px 0 7px 20px;
+        //     // display: block;
+        //     li{
+        //         // float: s;
+        //         float: left;
+        //         background-color: #f5004b;
+        //         margin-right: 10px;
+        //         padding: 0 5px;
+        //         text-align: left;
+        //         line-height: 20px;
+        //         color: #fff;
+        //         font-size: 12px;
+
+        //     }
+        // }
+        // .ul222{
+        //     height: 22px;
+        //     li{
+        //         float: left;
+        //         color: #5e5e5e;
+        //         font-size: 12px;
+        //         height: 14px;
+        //         margin: 7px 0;
+        //         border-left: 1px solid #e0e0e0;
+        //         // display: inline-block;
+
+        //     }
+        // }
+        // .ul333{
+        //     height: 22px;
+        //     li{
+        //         float: left;
+        //         color: #5e5e5e;
+        //         font-size: 12px;
+        //         height: 14px;
+        //         margin: 7px 0;
+        //         border-left: 1px solid #e0e0e0;
+        //         display: inline-block;
+                
+        //     }
+        // }
+        // .ul444{
+        //     height: 22px;
+        //     li{
+        //         float: left;
+        //         color: #5e5e5e;
+        //         font-size: 12px;
+        //         height: 14px;
+        //         margin: 7px 0;
+        //         border-left: 1px solid #e0e0e0;
+        //         display: inline-block;
+                
+        //     }
+        // }
+        // .ul555{
+        //     height: 22px;
+        //     li{
+        //         float: left;
+        //         color: #5e5e5e;
+        //         font-size: 12px;
+        //         height: 14px;
+        //         margin: 7px 0;
+        //         border-left: 1px solid #e0e0e0;
+        //         display: inline-block;
+                
+        //     }
+        // }
+        // .ul666{
+        //     height: 22px;
+        //     li{
+        //         float: left;
+        //         color: #5e5e5e;
+        //         font-size: 12px;
+        //         height: 14px;
+        //         margin: 7px 0;
+        //         border-left: 1px solid #e0e0e0;
+        //         display: inline-block;
+                
+        //     }
+        // }
+    }
+}
 
 }
 #section_1 .section_1_main .section_1_left{
@@ -326,9 +444,12 @@ $documnet_width:1200px;
         }
     }
 }
+
 #section_1 .section_1_main .section_1_left ul li a:hover{
     color: #dd00a7;
 }
+
+
 
 //section_2
 #section_2{
@@ -717,10 +838,10 @@ $documnet_width:1200px;
     height: 466px;
     margin: 0 auto;
     overflow: hidden;
+    background: #f7f7f7;
     .bg{
         width: $documnet_width;
         height: 426px;
-        background: #f7f7f7;
         margin: 0 auto;
         margin-top: 40px;
         overflow: hidden;
@@ -763,12 +884,15 @@ $documnet_width:1200px;
                     width: 954px;
                     height: 338px;
                     ul{
-                        display: flex;
-                        justify-content: space-between;
+                       width: 954px;
+                       height: 338px;
                         li{
                             width: 306px;
                             height: 338px;
                             background: white;
+                            float: left;
+                            // padding-bottom: 20px;
+                            margin-right: 12px;
                         }
                     }
                 }
@@ -780,7 +904,17 @@ $documnet_width:1200px;
                 float: right;
                 .top{
                     width: 246px;
-                    height: 376px;
+                    height: 38px;
+                }
+                .bottom{
+                    width: 246px;
+                    height: 338px;
+                    .bottom_section{
+                        height: 338px;
+                        padding: 0 15px;
+                        background: #fff;
+
+                    }
                 }
             }
         }
@@ -789,50 +923,902 @@ $documnet_width:1200px;
 
 //product
 #product{
-    width: $documnet_width;
-    margin: 0 auto;
-    border: 1px solid black;
+    width: $page_width;
+    // height: 3361px;
 }
 //section_6
 #section_6{
+    width: $documnet_width;
     height: 541px;
-    // background-color: lightslategrey;
+    margin: 0 auto;
+    .top{
+        width: $documnet_width;
+        height: 71px;
+        position: relative;
+        border-bottom: 1px solid #719ef7;
+        box-sizing: border-box;
+        .top_left{
+            width: 210px;
+            height: 38px;
+            float: left;
+            line-height: 38px;
+            font-size: 20px;
+            padding-top: 34px;
+            span{
+                float: left;
+                padding-right: 6px;
+            }
+            h2{
+                font-size: 100%;
+            }
+        }
+       .top_right{
+        //    width: 430px;
+           height: 30px;
+           float: right;
+            position: absolute;
+                    right: 0;
+                    top: 41px;
+           ul{
+                width: 100%;
+                height: 100%;
+                
+                li{
+                    width: 86px;
+                    height: 30px;
+                    float: left;
+                    text-align: center;
+                    line-height: 30px;
+                    a{
+                        color: #cccccc;
+                    }
+                }
+                .list11{
+                    background: rgb(113, 158, 247);
+                }
+           }
+           li:hover{
+               background: rgb(113, 158, 247);
+           }
+       }
+    }
+    .bottom{
+        width: $documnet_width;
+        height: 470px;
+        position: relative;
+        .bottom_left{
+            width: 210px;
+            height: 470px;
+            float: left;
+            background: #719ef7;
+            position: absolute;
+            left: 0;
+            top: 0;
+            a{
+                margin-left: -10px;
+            }
+        }
+        .phone{
+            width: 220px;
+            height: 32px;
+            ul{
+                width: 180px;
+                margin-left: 15px;
+                margin-right: 15px;
+                li{
+                    width: 180px;
+                    height: 32px;
+                    line-height: 32px;
+                    a{
+                        height: 23px;
+                        display: inline-block;
+                        font-size: 14px;
+                        color: #f0f0f0;
+                    }
+                    span{
+                        display: inline-block;
+                        font-size: 14px;
+                        color: #f0f0f0;
+                       padding: 0 5px;
+                    }
+                }
+            }
+        }
+        .bottom_phone{
+            width: 210px;
+            height: 160px;
+            ul{
+                height: 137px;
+                float: left;
+                font-size: 12px;
+                margin: 8px 0 15px 15px ;
+                a{
+                    color: #f0f0f0;
+                }
+                li{
+                    height: 28px;
+                    line-height: 28px;
+                }
+            }
+            .ul1{
+                width: 50px;
+            }
+            .ul2{
+                width: 37px;
+                
+            }
+            .ul3{
+                width: 73px;
+            }
+        }
+    }
 }
 
 //section_7
 #section_7{
+    width: $documnet_width;
     height: 659px;
-    background-color: lemonchiffon;
+    margin: 0 auto;
+    .top{
+        width: $documnet_width;
+        height: 71px;
+        position: relative;
+        border-bottom: 1px solid #3eb8e9;
+        box-sizing: border-box;
+        .top_left{
+            width: 210px;
+            height: 38px;
+            float: left;
+            line-height: 38px;
+            font-size: 20px;
+            padding-top: 34px;
+            span{
+                float: left;
+                padding-right: 6px;
+            }
+            h2{
+                font-size: 100%;
+            }
+        }
+       .top_right{
+        //    width: 430px;
+           height: 30px;
+           float: right;
+            position: absolute;
+                    right: 0;
+                    top: 41px;
+           ul{
+                width: 100%;
+                height: 100%;
+                
+                li{
+                    width: 86px;
+                    height: 30px;
+                    float: left;
+                    text-align: center;
+                    line-height: 30px;
+                    a{
+                        color: #cccccc;
+                    }
+                }
+           }
+           li:hover{
+               background: rgb(113, 158, 247);
+           }
+       }
+    }
+    .bottom{
+        width: $documnet_width;
+        height: 470px;
+        position: relative;
+        .bottom_left{
+            width: 210px;
+            height: 470px;
+            float: left;
+            background: #3eb8e9;
+            position: absolute;
+            left: 0;
+            top: 0;
+            a{
+                margin-left: -10px;
+            }
+        }
+        .phone{
+            width: 220px;
+            height: 32px;
+            ul{
+                width: 180px;
+                margin-left: 15px;
+                margin-right: 15px;
+                li{
+                    width: 180px;
+                    height: 32px;
+                    line-height: 32px;
+                    a{
+                        height: 23px;
+                        display: inline-block;
+                        font-size: 14px;
+                        color: #f0f0f0;
+                    }
+                    span{
+                        display: inline-block;
+                        font-size: 14px;
+                        color: #f0f0f0;
+                       padding: 0 5px;
+                    }
+                }
+            }
+        }
+        .bottom_phone{
+            width: 210px;
+            height: 160px;
+            ul{
+                height: 137px;
+                float: left;
+                font-size: 12px;
+                margin: 8px 0 15px 15px ;
+                a{
+                    color: #f0f0f0;
+                }
+                li{
+                    height: 28px;
+                    line-height: 28px;
+                }
+            }
+            .ul1{
+                width: 50px;
+            }
+            .ul2{
+                width: 37px;
+                
+            }
+            .ul3{
+                width: 73px;
+            }
+        }
+    }
+    .bottom_ul{
+        width: $documnet_width;
+        height: 100px;
+        margin-top: 18px;
+    }
 }
+
 
 //section_8
 #section_8{
+    width: $documnet_width;
     height: 541px;
-    background-color: lightseagreen;
+    margin: 0 auto;
+    .top{
+        width: $documnet_width;
+        height: 71px;
+        position: relative;
+        border-bottom: 1px solid #7179ea;
+        box-sizing: border-box;
+        .top_left{
+            width: 210px;
+            height: 38px;
+            float: left;
+            line-height: 38px;
+            font-size: 20px;
+            padding-top: 34px;
+            span{
+                float: left;
+                padding-right: 6px;
+            }
+            h2{
+                font-size: 100%;
+            }
+        }
+       .top_right{
+        //    width: 430px;
+           height: 30px;
+           float: right;
+            position: absolute;
+                    right: 0;
+                    top: 41px;
+           ul{
+                width: 100%;
+                height: 100%;
+                
+                li{
+                    width: 86px;
+                    height: 30px;
+                    float: left;
+                    text-align: center;
+                    line-height: 30px;
+                    a{
+                        color: #cccccc;
+                    }
+                }
+           }
+           li:hover{
+               background: rgb(113, 158, 247);
+           }
+       }
+    }
+    .bottom{
+        width: $documnet_width;
+        height: 470px;
+        position: relative;
+        .bottom_left{
+            width: 210px;
+            height: 470px;
+            float: left;
+            background: #7179ea;
+            position: absolute;
+            left: 0;
+            top: 0;
+            a{
+                margin-left: -10px;
+            }
+        }
+        .phone{
+            width: 220px;
+            height: 32px;
+            ul{
+                width: 180px;
+                margin-left: 15px;
+                margin-right: 15px;
+                li{
+                    width: 180px;
+                    height: 32px;
+                    line-height: 32px;
+                    a{
+                        height: 23px;
+                        display: inline-block;
+                        font-size: 14px;
+                        color: #f0f0f0;
+                    }
+                    span{
+                        display: inline-block;
+                        font-size: 14px;
+                        color: #f0f0f0;
+                       padding: 0 5px;
+                    }
+                }
+            }
+        }
+        .bottom_phone{
+            width: 210px;
+            height: 160px;
+            ul{
+                height: 137px;
+                float: left;
+                font-size: 12px;
+                margin: 8px 0 15px 15px ;
+                a{
+                    color: #f0f0f0;
+                }
+                li{
+                    height: 28px;
+                    line-height: 28px;
+                }
+            }
+            .ul1{
+                width: 50px;
+            }
+            .ul2{
+                width: 37px;
+                
+            }
+            .ul3{
+                width: 73px;
+            }
+        }
+    }
 }
 
 //section_9
 #section_9{
-    height: 541px;
-    background-color: lightskyblue;
+    width: $documnet_width;
+    height: 659px;
+    margin: 0 auto;
+    .top{
+        width: $documnet_width;
+        height: 71px;
+        position: relative;
+        border-bottom: 1px solid #719ef7;
+        box-sizing: border-box;
+        .top_left{
+            width: 210px;
+            height: 38px;
+            float: left;
+            line-height: 38px;
+            font-size: 20px;
+            padding-top: 34px;
+            span{
+                float: left;
+                padding-right: 6px;
+            }
+            h2{
+                font-size: 100%;
+            }
+        }
+       .top_right{
+        //    width: 430px;
+           height: 30px;
+           float: right;
+            position: absolute;
+                    right: 0;
+                    top: 41px;
+           ul{
+                width: 100%;
+                height: 100%;
+                
+                li{
+                    width: 86px;
+                    height: 30px;
+                    float: left;
+                    text-align: center;
+                    line-height: 30px;
+                    a{
+                        color: #cccccc;
+                    }
+                }
+           }
+           li:hover{
+               background: rgb(113, 158, 247);
+           }
+       }
+    }
+    .bottom{
+        width: $documnet_width;
+        height: 470px;
+        position: relative;
+        .bottom_left{
+            width: 210px;
+            height: 470px;
+            float: left;
+            background: #719ef7;
+            position: absolute;
+            left: 0;
+            top: 0;
+            a{
+                margin-left: -10px;
+            }
+        }
+        .phone{
+            width: 220px;
+            height: 32px;
+            ul{
+                width: 180px;
+                margin-left: 15px;
+                margin-right: 15px;
+                li{
+                    width: 180px;
+                    height: 32px;
+                    line-height: 32px;
+                    a{
+                        height: 23px;
+                        display: inline-block;
+                        font-size: 14px;
+                        color: #f0f0f0;
+                    }
+                    span{
+                        display: inline-block;
+                        font-size: 14px;
+                        color: #f0f0f0;
+                       padding: 0 5px;
+                    }
+                }
+            }
+        }
+        .bottom_phone{
+            width: 210px;
+            height: 160px;
+            ul{
+                height: 137px;
+                float: left;
+                font-size: 12px;
+                margin: 8px 0 15px 15px ;
+                a{
+                    color: #f0f0f0;
+                }
+                li{
+                    height: 28px;
+                    line-height: 28px;
+                }
+            }
+            .ul1{
+                width: 50px;
+            }
+            .ul2{
+                width: 37px;
+                
+            }
+            .ul3{
+                width: 73px;
+            }
+        }
+    }
+    .bottom_ul{
+        width: $documnet_width;
+        height: 100px;
+        margin-top: 18px;
+    }
 }
 
 //section_10
 #section_10{
+    width: $documnet_width;
     height: 659px;
-    background-color: linen;
+    margin: 0 auto;
+    .top{
+        width: $documnet_width;
+        height: 71px;
+        position: relative;
+        border-bottom: 1px solid #e744c1;
+        box-sizing: border-box;
+        .top_left{
+            width: 210px;
+            height: 38px;
+            float: left;
+            line-height: 38px;
+            font-size: 20px;
+            padding-top: 34px;
+            span{
+                float: left;
+                padding-right: 6px;
+            }
+            h2{
+                font-size: 100%;
+            }
+        }
+       .top_right{
+        //    width: 430px;
+           height: 30px;
+           float: right;
+            position: absolute;
+                    right: 0;
+                    top: 41px;
+           ul{
+                width: 100%;
+                height: 100%;
+                
+                li{
+                    width: 86px;
+                    height: 30px;
+                    float: left;
+                    text-align: center;
+                    line-height: 30px;
+                    a{
+                        color: #cccccc;
+                    }
+                }
+           }
+           li:hover{
+               background: rgb(113, 158, 247);
+           }
+       }
+    }
+    .bottom{
+        width: $documnet_width;
+        height: 470px;
+        position: relative;
+        .bottom_left{
+            width: 210px;
+            height: 470px;
+            float: left;
+            background: #e744c1;
+            position: absolute;
+            left: 0;
+            top: 0;
+            a{
+                margin-left: -10px;
+            }
+        }
+        .phone{
+            width: 220px;
+            height: 32px;
+            ul{
+                width: 180px;
+                margin-left: 15px;
+                margin-right: 15px;
+                li{
+                    width: 180px;
+                    height: 32px;
+                    line-height: 32px;
+                    a{
+                        height: 23px;
+                        display: inline-block;
+                        font-size: 14px;
+                        color: #f0f0f0;
+                    }
+                    span{
+                        display: inline-block;
+                        font-size: 14px;
+                        color: #f0f0f0;
+                       padding: 0 5px;
+                    }
+                }
+            }
+        }
+        .bottom_phone{
+            width: 210px;
+            height: 160px;
+            ul{
+                height: 137px;
+                float: left;
+                font-size: 12px;
+                margin: 8px 0 15px 15px ;
+                a{
+                    color: #f0f0f0;
+                }
+                li{
+                    height: 28px;
+                    line-height: 28px;
+                }
+            }
+            .ul1{
+                width: 50px;
+            }
+            .ul2{
+                width: 37px;
+                
+            }
+            .ul3{
+                width: 73px;
+            }
+        }
+    }
+    .bottom_ul{
+        width: $documnet_width;
+        height: 100px;
+        margin-top: 18px;
+    }
 }
+
 
 //section_11
 #section_11{
+    width: $documnet_width;
     height: 541px;
-    background-color: lightyellow;
+    margin: 0 auto;
+    .top{
+        width: $documnet_width;
+        height: 71px;
+        position: relative;
+        border-bottom: 1px solid #719ef7;
+        box-sizing: border-box;
+        .top_left{
+            width: 210px;
+            height: 38px;
+            float: left;
+            line-height: 38px;
+            font-size: 20px;
+            padding-top: 34px;
+            span{
+                float: left;
+                padding-right: 6px;
+            }
+            h2{
+                font-size: 100%;
+            }
+        }
+       .top_right{
+        //    width: 430px;
+           height: 30px;
+           float: right;
+            position: absolute;
+                    right: 0;
+                    top: 41px;
+           ul{
+                width: 100%;
+                height: 100%;
+                
+                li{
+                    width: 86px;
+                    height: 30px;
+                    float: left;
+                    text-align: center;
+                    line-height: 30px;
+                    a{
+                        color: #cccccc;
+                    }
+                }
+           }
+           li:hover{
+               background: rgb(113, 158, 247);
+           }
+       }
+    }
+    .bottom{
+        width: $documnet_width;
+        height: 470px;
+        position: relative;
+        .bottom_left{
+            width: 210px;
+            height: 470px;
+            float: left;
+            background: #719ef7;
+            position: absolute;
+            left: 0;
+            top: 0;
+            a{
+                margin-left: -10px;
+            }
+        }
+        .phone{
+            width: 220px;
+            height: 32px;
+            ul{
+                width: 180px;
+                margin-left: 15px;
+                margin-right: 15px;
+                li{
+                    width: 180px;
+                    height: 32px;
+                    line-height: 32px;
+                    a{
+                        height: 23px;
+                        display: inline-block;
+                        font-size: 14px;
+                        color: #f0f0f0;
+                    }
+                    span{
+                        display: inline-block;
+                        font-size: 14px;
+                        color: #f0f0f0;
+                       padding: 0 5px;
+                    }
+                }
+            }
+        }
+        .bottom_phone{
+            width: 210px;
+            height: 160px;
+            ul{
+                height: 137px;
+                float: left;
+                font-size: 12px;
+                margin: 8px 0 15px 15px ;
+                a{
+                    color: #f0f0f0;
+                }
+                li{
+                    height: 28px;
+                    line-height: 28px;
+                }
+            }
+            .ul1{
+                width: 50px;
+            }
+            .ul2{
+                width: 37px;
+                
+            }
+            .ul3{
+                width: 73px;
+            }
+        }
+    }
 }
 
 //section_12
 #section_12{
+    width: $documnet_width;
     height: 541px;
-    background-color: goldenrod;
+    margin: 0 auto;
+    .top{
+        width: $documnet_width;
+        height: 71px;
+        position: relative;
+        border-bottom: 1px solid #6a8ea0;
+        box-sizing: border-box;
+        .top_left{
+            width: 210px;
+            height: 38px;
+            float: left;
+            line-height: 38px;
+            font-size: 20px;
+            padding-top: 34px;
+            span{
+                float: left;
+                padding-right: 6px;
+            }
+            h2{
+                font-size: 100%;
+            }
+        }
+       .top_right{
+        //    width: 430px;
+           height: 30px;
+           float: right;
+            position: absolute;
+                    right: 0;
+                    top: 41px;
+           ul{
+                width: 100%;
+                height: 100%;
+                
+                li{
+                    width: 86px;
+                    height: 30px;
+                    float: left;
+                    text-align: center;
+                    line-height: 30px;
+                    a{
+                        color: #cccccc;
+                    }
+                }
+           }
+           li:hover{
+               background: rgb(113, 158, 247);
+           }
+       }
+    }
+    .bottom{
+        width: $documnet_width;
+        height: 470px;
+        position: relative;
+        .bottom_left{
+            width: 210px;
+            height: 470px;
+            float: left;
+            background: #6a8ea0;
+            position: absolute;
+            left: 0;
+            top: 0;
+            a{
+                margin-left: -10px;
+            }
+        }
+        .phone{
+            width: 220px;
+            height: 32px;
+            ul{
+                width: 180px;
+                margin-left: 15px;
+                margin-right: 15px;
+                li{
+                    width: 180px;
+                    height: 32px;
+                    line-height: 32px;
+                    a{
+                        height: 23px;
+                        display: inline-block;
+                        font-size: 14px;
+                        color: #f0f0f0;
+                    }
+                    span{
+                        display: inline-block;
+                        font-size: 14px;
+                        color: #f0f0f0;
+                       padding: 0 5px;
+                    }
+                }
+            }
+        }
+        .bottom_phone{
+            width: 210px;
+            height: 160px;
+            ul{
+                height: 137px;
+                float: left;
+                font-size: 12px;
+                margin: 8px 0 15px 15px ;
+                a{
+                    color: #f0f0f0;
+                }
+                li{
+                    height: 28px;
+                    line-height: 28px;
+                }
+            }
+            .ul1{
+                width: 50px;
+            }
+            .ul2{
+                width: 37px;
+                
+            }
+            .ul3{
+                width: 73px;
+            }
+        }
+    }
 }
 
 //section_13
@@ -840,22 +1826,197 @@ $documnet_width:1200px;
     width: $documnet_width;
     height: 400px;
     margin: 0 auto;
-    background-color: orange;
-}
+    padding: 20px;
+    .section_13_left{
+        width: 830px;
+        height: 400px;
+        float: left;
+        .left_top{
+            width: 830px;
+            height: 60px;
+            line-height: 60px;
+            h2{
+                float: left;
+                font-size: 20px;
+                color: #ccc;
+            }
+            span{
+                padding: 27px 0 0 9px;
+                color: #ccc;
+                font-size: 20px;
+            }
+            p{
+                float: right;
+                a{
+                    color: #ccc;
+                    font-size: 12px;
+                }
+            }
+            }
+        }
+        .left_bottom{
+            width: 830px;
+            height: 340px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            .left{
+                float: left;
+                width: 281px;
+                height: 340px;
+                border-right: 1px solid #ccc;
+                box-sizing: border-box;
+            }
+            .right{
+                float: right;
+                width: 547px;
+                height: 340px;
+                box-sizing: border-box;
+            }
+        }
+    }
+
+    .section_13_right{
+        width: 361px;
+        height: 400px;
+        float: right;
+        .right_top{
+            width: 361px;
+            height: 60px;
+            // float: left;
+            line-height: 60px;
+            h2{
+               float: left;
+                font-size: 20px;
+                color: #ccc; 
+            }
+            span{
+                padding: 27px 0 0 9px;
+                color: #ccc;
+                font-size: 20px;
+            }
+            p{
+                float: right;
+                a{
+                    color: #ccc;
+                    font-size: 12px;
+                }
+            }
+        }
+        .right_bottom{
+            width: 361px;
+            height: 340px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            // margin-top: 60px;
+        }
+    }
+
+
 
 //section_14
 #section_14{
     width: $documnet_width;
     height: 222px;
     margin: 0 auto;
-    background-color: orangered;
+
+    .ul11{
+        width: $documnet_width;
+        height: 42px;
+        padding: 15px 0;
+        background: #ccc;
+        // float: left;
+        li{
+            width: 396px;
+            height: 42px;
+            float: left;
+            line-height: 42px;
+        }
+    }
+    .section_14_footer{
+        width: $documnet_width;
+        height: 150px;
+        margin: 0 auto;
+        // float: left;
+        ul{
+            width: 240px;
+            height: 150px;
+            float: left;
+            li{
+                padding: 10px 0 0 75px;
+                font-size: 12px;
+                a{
+                    color: #A5A5A5;
+                }
+            }
+            .list1{
+                font-size: 16px;
+            }
+        }
+    }
 }
 
 //footer
 #footer{
-    width: $documnet_width;
+    width: $page_width;
     height: 293px;
-    margin: 0 auto;
+    margin: 15px auto 0;
+    background: #f7f7f7;
+    border-top: 1px solid #dd00a7;
+    
+    .footer_main{
+        margin: 0 auto;
+        width: $documnet_width;
+        height: 293px;
+        padding: 20px 0 0;
+        overflow: hidden;
+        // visibility: hidden;
+        span{
+            width: 315px;
+            height: 45px;
+            // float: left;
+            display: inline-block;
+            margin-left: 10px;
+            padding: 0 50px 40px 0;
+            strong{
+                font-size: 18px;
+                display: block;
+                color: #333333;
+            }
+            a{
+                font-size: 12px;
+                color: #999999;
+            }
+        }
+        ul{
+            width: $documnet_width;
+            height: 22px;
+            line-height: 22px;
+            font-size: 12px;
+            li{
+                float: left;
+                padding: 0 13px 0 0;
+                // color: #ccc;
+                white-space: nowrap;
+                a{
+                    color: #ccc;
+                }
+            }
+        }
+        p{
+            width: $documnet_width;
+            height: 22px;
+            line-height: 22px;
+            font-size: 12px;
+        }
+    }
+   
 }
+#footer .footer_main span p a:hover{
+    color: #f5004b;
+}
+#footer .footer_main ul li:hover a{
+    color: #f5004b;
+}
+
 
 
