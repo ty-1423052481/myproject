@@ -323,7 +323,6 @@ $documnet_width:1200px;
                 position: absolute;
                 left: 0px;
                 top: 0;
-                // display: none;
                 img {
                     width: 750px;
                     height: 450px;
@@ -365,6 +364,48 @@ $documnet_width:1200px;
                 a {
                     background-color: #e744c1;
                 }
+            }
+        }
+        .slider-extra {
+            .btn {
+                z-index: 59;
+                left: 50%;
+                top: 185px;
+                position: absolute;
+                width: 40px;
+                height: 80px;
+                // position: relative;
+                .btnbg {
+                    display: block;
+                    background: #000;
+                    opacity: 0.2;
+                    width: 40px;
+                    height: 80px;
+                }
+                p {
+                    position: absolute;
+                    width: 40px;
+                    height: 80px;
+                    left: 0;
+                    top: 0;
+                    z-index: 50;
+                    cursor: pointer;
+                }
+                .go_l {
+                    background: url(../images/lunbo/ui.png) 0 -112px no-repeat;
+                }
+                .go_r {
+                    background: url(../images/lunbo/ui.png) -42px -112px no-repeat;
+                }
+            }
+            .pre {
+                margin-left: 268px;
+            }
+            .nex {
+                margin-left: 309px;
+            }
+            .btn:hover p {
+                background-color: red;
             }
         }
     }
@@ -593,6 +634,34 @@ $documnet_width:1200px;
             width: 950px;
             height: 212px;
             border-top: 1px solid #cccccc;
+            a {
+                width: 237px;
+                height: 210px;
+                // padding: 14px 30px;
+                float: left;
+                overflow: hidden;
+                img {
+                    margin-left: 40px;
+                    margin-top: 10px;
+                }
+                .span1 {
+                    font-size: 20px;
+                    margin-left: 40px;
+                    color: red;
+                }
+                .span2 {
+                    font-size: 14px;
+                    color: #ccc;
+                    text-decoration: line-through;
+                }
+                p {
+                    width: 160px;
+                    font-size: 14px;
+                    overflow: hidden;
+                    margin-left: 40px;
+                    margin-top: 5px;
+                }
+            }
         }
     }
     .section_2_right {
@@ -883,9 +952,35 @@ $documnet_width:1200px;
                     width: 200px;
                     height: 224px;
                     border-right: 1px dashed #eeeeee;
-                }
-                li:last-child {
-                    border: none;
+                    margin-top: 20px;
+                    a {
+                        display: block;
+                        height: 210px;
+                        width: 199px;
+                        padding-top: 15px;
+                        img {
+                            margin-left: 30px;
+                            width: 120px;
+                            height: 120px;
+                        }
+                        span {
+                            color: #ff0027;
+                            line-height: 16px;
+                            height: 16px;
+                            margin: 8px 0 0 24px;
+                            font-size: 16px;
+                        }
+                        p {
+                            width: 167px;
+                            height: 36px;
+                            overflow: hidden;
+                            margin: 5px 0 0 5px;
+                            color: #5e5e5e;
+                            font-size: 12px;
+                            line-height: 18px;
+                            cursor: pointer;
+                        }
+                    }
                 }
             }
         }
