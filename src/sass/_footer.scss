@@ -1,0 +1,80 @@
+.newRegister{
+    height: 208px;
+    #gome-foot{
+        border-top: 1px solid #dedede;
+        background: #ffffff;
+        margin-top: 15px;
+        #gome-foot-box{
+            width: 0 auto;
+            background: #ffffff;
+            position: relative;
+            padding: 20px 0 0;
+            ul{
+                overflow: hidden;
+                width: 990px;
+                height: 22px;
+                li{
+                    float: left;
+                    font-size: 12px;
+                    padding: 0 13px 0 0;
+                    line-height: 22px;
+                    white-space: nowrap;
+                    a{
+                        color: #cccccc;
+                    }
+                }
+            }
+            p{
+                width: 990px;
+                height: 22px;
+                line-height: 22px;
+                font-size: 12px;
+                color: #999999;
+            }
+            .gome-foot-credit{
+                width: 990px;
+                height: 36px;
+                border-top: 1px solid #e6e6e6;
+                margin-top: 5px;
+                padding: 10px 0 25px;
+                overflow: hidden;
+                a{
+                    color: #666666;
+                    font-size: 13px;
+                    float: left;
+                    line-height: 36px;
+                    i{
+                        display: block;
+                        width: 35px;
+                        height: 35px;
+                        background: url(../images/spit.png) ;
+                        float: left;
+                    }
+                }
+                .credit-baxx i{
+                    background-position: 0 -180px;
+                }
+                .credit-xypi i{
+                    background-position: -35px -180px;
+                }
+                .credit-cxwz i{
+                    background-position: -70px -180px;
+                }
+                .credit-hdjc i{
+                    background-position: -105px -180px;
+                }
+                .credit-wgdj i{
+                    background-position: -140px -180px;
+
+                }
+                .credit-report i{
+                    background-position: -175px -180px;
+                }
+            }
+        }
+    }
+}
+
+.newRegister a:hover{
+    color: #f5004b;
+}
