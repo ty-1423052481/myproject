@@ -1,7 +1,7 @@
 @import "footer";
 @charset "utf-8";
-@import "compass/reset";//编写自己的样式之前，有必要重置浏览器的默认样式
-*{
+@import "compass/reset"; //编写自己的样式之前，有必要重置浏览器的默认样式
+* {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -9,31 +9,28 @@
     margin: 0 auto;
 }
 
-.w990{
+.w990 {
     width: 990px;
     height: 120px;
     margin: 0 auto;
     font-size: 100%;
     color: #333;
     text-align: left;
-    #logo{
+    #logo {
         height: 120px;
         vertical-align: middle;
         margin: 0 auto;
         margin: 0px 40px 0 0;
         float: left;
-            a{
-                background: url(../images/register/loginlogo.png) no-repeat;
-                width: 300px;
-                height: 62px;
-                margin-top: 32px;
-                display: block;
-                text-indent: -99px;
-                color: #2875cc;
-                font-size: 13px;
-            }
-        
-
+        a {
+            background: url(../images/loginlogo.png) no-repeat;
+            width: 300px;
+            height: 62px;
+            margin-top: 32px;
+            display: block;
+            text-indent: -99px;
+            color: #2875cc;
+            font-size: 13px;
+        }
     }
-    
 }

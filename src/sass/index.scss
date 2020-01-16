@@ -392,10 +392,10 @@ $documnet_width:1200px;
                     cursor: pointer;
                 }
                 .go_l {
-                    background: url(../images/lunbo/ui.png) 0 -112px no-repeat;
+                    background: url(../images/ui.png) 0 -112px no-repeat;
                 }
                 .go_r {
-                    background: url(../images/lunbo/ui.png) -42px -112px no-repeat;
+                    background: url(../images/ui.png) -42px -112px no-repeat;
                 }
             }
             .pre {
@@ -1201,6 +1201,51 @@ $documnet_width:1200px;
                 width: 73px;
             }
         }
+        .bottom_right {
+            width: 990px;
+            height: 470px;
+            float: right;
+            li {
+                width: 198px;
+                height: 235px;
+                float: left;
+                overflow: hidden;
+                font-size: 12px;
+                a {
+                    width: 197px;
+                    height: 234px;
+                    display: block;
+                    border-right: 1px solid #eeeeee;
+                    border-bottom: 1px solid #eeeeee;
+                    overflow: hidden;
+                    img {
+                        width: 130px;
+                        height: 130px;
+                        margin: 20px 0 15px 34px;
+                    }
+                    p {
+                        width: 157px;
+                        height: 36px;
+                        margin-left: 20px;
+                        line-height: 18px;
+                        font-size: 12px;
+                        color: #5e5e5e;
+                        overflow: hidden;
+                    }
+                    span {
+                        display: block;
+                        height: 20px;
+                        line-height: 26px;
+                        color: #ff0027;
+                        font-size: 14px;
+                        margin-left: 20px;
+                    }
+                }
+            }
+            li a p:hover {
+                color: #ff0027;
+            }
+        }
     }
 }
 
@@ -1249,6 +1294,9 @@ $documnet_width:1200px;
                     a {
                         color: #cccccc;
                     }
+                }
+                .list1 {
+                    background-color: rgb(113, 158, 247);
                 }
             }
             li:hover {
@@ -1324,6 +1372,51 @@ $documnet_width:1200px;
                 width: 73px;
             }
         }
+        .bottom_right {
+            width: 990px;
+            height: 470px;
+            float: right;
+            li {
+                width: 198px;
+                height: 235px;
+                float: left;
+                overflow: hidden;
+                font-size: 12px;
+                a {
+                    width: 197px;
+                    height: 234px;
+                    display: block;
+                    border-right: 1px solid #eeeeee;
+                    border-bottom: 1px solid #eeeeee;
+                    overflow: hidden;
+                    img {
+                        width: 130px;
+                        height: 130px;
+                        margin: 20px 0 15px 34px;
+                    }
+                    p {
+                        width: 157px;
+                        height: 36px;
+                        margin-left: 20px;
+                        line-height: 18px;
+                        font-size: 12px;
+                        color: #5e5e5e;
+                        overflow: hidden;
+                    }
+                    span {
+                        display: block;
+                        height: 20px;
+                        line-height: 26px;
+                        color: #ff0027;
+                        font-size: 14px;
+                        margin-left: 20px;
+                    }
+                }
+            }
+            li a p:hover {
+                color: #ff0027;
+            }
+        }
     }
     .bottom_ul {
         width: $documnet_width;
@@ -1377,6 +1470,9 @@ $documnet_width:1200px;
                     a {
                         color: #cccccc;
                     }
+                }
+                .list1 {
+                    background-color: #719ef7;
                 }
             }
             li:hover {
@@ -1452,6 +1548,51 @@ $documnet_width:1200px;
                 width: 73px;
             }
         }
+        .bottom_right {
+            width: 990px;
+            height: 470px;
+            float: right;
+            li {
+                width: 198px;
+                height: 235px;
+                float: left;
+                overflow: hidden;
+                font-size: 12px;
+                a {
+                    width: 197px;
+                    height: 234px;
+                    display: block;
+                    border-right: 1px solid #eeeeee;
+                    border-bottom: 1px solid #eeeeee;
+                    overflow: hidden;
+                    img {
+                        width: 130px;
+                        height: 130px;
+                        margin: 20px 0 15px 34px;
+                    }
+                    p {
+                        width: 157px;
+                        height: 36px;
+                        margin-left: 20px;
+                        line-height: 18px;
+                        font-size: 12px;
+                        color: #5e5e5e;
+                        overflow: hidden;
+                    }
+                    span {
+                        display: block;
+                        height: 20px;
+                        line-height: 26px;
+                        color: #ff0027;
+                        font-size: 14px;
+                        margin-left: 20px;
+                    }
+                }
+            }
+            li a p:hover {
+                color: #ff0027;
+            }
+        }
     }
 }
 
@@ -1500,6 +1641,9 @@ $documnet_width:1200px;
                     a {
                         color: #cccccc;
                     }
+                }
+                .list1 {
+                    background-color: rgb(113, 158, 247);
                 }
             }
             li:hover {
@@ -1575,6 +1719,51 @@ $documnet_width:1200px;
                 width: 73px;
             }
         }
+        .bottom_right {
+            width: 990px;
+            height: 470px;
+            float: right;
+            li {
+                width: 198px;
+                height: 235px;
+                float: left;
+                overflow: hidden;
+                font-size: 12px;
+                a {
+                    width: 197px;
+                    height: 234px;
+                    display: block;
+                    border-right: 1px solid #eeeeee;
+                    border-bottom: 1px solid #eeeeee;
+                    overflow: hidden;
+                    img {
+                        width: 130px;
+                        height: 130px;
+                        margin: 20px 0 15px 34px;
+                    }
+                    p {
+                        width: 157px;
+                        height: 36px;
+                        margin-left: 20px;
+                        line-height: 18px;
+                        font-size: 12px;
+                        color: #5e5e5e;
+                        overflow: hidden;
+                    }
+                    span {
+                        display: block;
+                        height: 20px;
+                        line-height: 26px;
+                        color: #ff0027;
+                        font-size: 14px;
+                        margin-left: 20px;
+                    }
+                }
+            }
+            li a p:hover {
+                color: #ff0027;
+            }
+        }
     }
     .bottom_ul {
         width: $documnet_width;
@@ -1629,9 +1818,12 @@ $documnet_width:1200px;
                         color: #cccccc;
                     }
                 }
+                .list1 {
+                    background-color: #e744c1;
+                }
             }
             li:hover {
-                background: rgb(113, 158, 247);
+                background: #e744c1;
             }
         }
     }
@@ -1703,6 +1895,51 @@ $documnet_width:1200px;
                 width: 73px;
             }
         }
+        .bottom_right {
+            width: 990px;
+            height: 470px;
+            float: right;
+            li {
+                width: 198px;
+                height: 235px;
+                float: left;
+                overflow: hidden;
+                font-size: 12px;
+                a {
+                    width: 197px;
+                    height: 234px;
+                    display: block;
+                    border-right: 1px solid #eeeeee;
+                    border-bottom: 1px solid #eeeeee;
+                    overflow: hidden;
+                    img {
+                        width: 130px;
+                        height: 130px;
+                        margin: 20px 0 15px 34px;
+                    }
+                    p {
+                        width: 157px;
+                        height: 36px;
+                        margin-left: 20px;
+                        line-height: 18px;
+                        font-size: 12px;
+                        color: #5e5e5e;
+                        overflow: hidden;
+                    }
+                    span {
+                        display: block;
+                        height: 20px;
+                        line-height: 26px;
+                        color: #ff0027;
+                        font-size: 14px;
+                        margin-left: 20px;
+                    }
+                }
+            }
+            li a p:hover {
+                color: #ff0027;
+            }
+        }
     }
     .bottom_ul {
         width: $documnet_width;
@@ -1756,6 +1993,9 @@ $documnet_width:1200px;
                     a {
                         color: #cccccc;
                     }
+                }
+                .list1 {
+                    background-color: #719ef7;
                 }
             }
             li:hover {
@@ -1831,6 +2071,51 @@ $documnet_width:1200px;
                 width: 73px;
             }
         }
+        .bottom_right {
+            width: 990px;
+            height: 470px;
+            float: right;
+            li {
+                width: 198px;
+                height: 235px;
+                float: left;
+                overflow: hidden;
+                font-size: 12px;
+                a {
+                    width: 197px;
+                    height: 234px;
+                    display: block;
+                    border-right: 1px solid #eeeeee;
+                    border-bottom: 1px solid #eeeeee;
+                    overflow: hidden;
+                    img {
+                        width: 130px;
+                        height: 130px;
+                        margin: 20px 0 15px 34px;
+                    }
+                    p {
+                        width: 157px;
+                        height: 36px;
+                        margin-left: 20px;
+                        line-height: 18px;
+                        font-size: 12px;
+                        color: #5e5e5e;
+                        overflow: hidden;
+                    }
+                    span {
+                        display: block;
+                        height: 20px;
+                        line-height: 26px;
+                        color: #ff0027;
+                        font-size: 14px;
+                        margin-left: 20px;
+                    }
+                }
+            }
+            li a p:hover {
+                color: #ff0027;
+            }
+        }
     }
 }
 
@@ -1879,6 +2164,9 @@ $documnet_width:1200px;
                     a {
                         color: #cccccc;
                     }
+                }
+                .list1 {
+                    background-color: rgb(113, 158, 247);
                 }
             }
             li:hover {
@@ -1954,6 +2242,51 @@ $documnet_width:1200px;
                 width: 73px;
             }
         }
+        .bottom_right {
+            width: 990px;
+            height: 470px;
+            float: right;
+            li {
+                width: 198px;
+                height: 235px;
+                float: left;
+                overflow: hidden;
+                font-size: 12px;
+                a {
+                    width: 197px;
+                    height: 234px;
+                    display: block;
+                    border-right: 1px solid #eeeeee;
+                    border-bottom: 1px solid #eeeeee;
+                    overflow: hidden;
+                    img {
+                        width: 130px;
+                        height: 130px;
+                        margin: 20px 0 15px 34px;
+                    }
+                    p {
+                        width: 157px;
+                        height: 36px;
+                        margin-left: 20px;
+                        line-height: 18px;
+                        font-size: 12px;
+                        color: #5e5e5e;
+                        overflow: hidden;
+                    }
+                    span {
+                        display: block;
+                        height: 20px;
+                        line-height: 26px;
+                        color: #ff0027;
+                        font-size: 14px;
+                        margin-left: 20px;
+                    }
+                }
+            }
+            li a p:hover {
+                color: #ff0027;
+            }
+        }
     }
 }
 
@@ -1989,24 +2322,89 @@ $documnet_width:1200px;
                 }
             }
         }
-    }
-    .left_bottom {
-        width: 830px;
-        height: 340px;
-        box-sizing: border-box;
-        border: 1px solid #ccc;
-        .left {
+        .left_bottom {
+            width: 830px;
+            height: 340px;
             float: left;
-            width: 281px;
-            height: 340px;
-            border-right: 1px solid #ccc;
+            border: 1px solid #eeeeee;
             box-sizing: border-box;
-        }
-        .right {
-            float: right;
-            width: 547px;
-            height: 340px;
-            box-sizing: border-box;
+            ul {
+                width: 830px;
+                height: 340px;
+                li {
+                    width: 274px;
+                    height: 170px;
+                    float: left;
+                    a {
+                        width: 274px;
+                        height: 170px;
+                        display: block;
+                        border-right: 1px dashed #eeeeee;
+                        // border-bottom: 1px dashed #eeeeee;
+                        box-sizing: border-box;
+                        overflow: hidden;
+                        img {
+                            width: 120px;
+                            height: 120px;
+                            margin: 25px 10px 0;
+                            float: left;
+                        }
+                        p {
+                            font-size: 13px;
+                            line-height: 20px;
+                            width: 120px;
+                            height: 40px;
+                            overflow: hidden;
+                            margin-top: 29px;
+                        }
+                        span {
+                            display: block;
+                            overflow: hidden;
+                            margin-top: 8px;
+                            font-size: 14px;
+                            color: #ff0027;
+                            width: 120px;
+                            height: 14px;
+                        }
+                    }
+                }
+                li:nth-child(1) {
+                    width: 281px;
+                    height: 338px;
+                    a {
+                        display: block;
+                        width: 280px;
+                        height: 338px;
+                        float: left;
+                        text-align: center;
+                        border-right: 1px solid #eeeeee;
+                        img {
+                            width: 210px;
+                            height: 210px;
+                            margin: 30px 36px 29px;
+                        }
+                        p {
+                            margin-left: 20px;
+                            line-height: 24px;
+                            width: 240px;
+                            height: 24px;
+                            color: #404040;
+                        }
+                        p:hover {
+                            color: #ff0027;
+                        }
+                        span {
+                            display: block;
+                            margin-top: 15px;
+                            width: 240px;
+                            height: 24px;
+                            color: #ff0027;
+                            font-size: 16px;
+                            overflow: hidden;
+                        }
+                    }
+                }
+            }
         }
     }
 }

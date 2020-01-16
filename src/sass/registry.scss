@@ -1,32 +1,31 @@
 @charset "utf-8";
-@import "compass/reset";//编写自己的样式之前，有必要重置浏览器的默认样式
+@import "compass/reset"; //编写自己的样式之前，有必要重置浏览器的默认样式
 @import "footer";
-
-*{
+* {
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
 }
-// 头部
 
-.w990{
+// 头部
+.w990 {
     width: 990px;
     height: 120px;
     margin: 0 auto;
     font-size: 100%;
     color: #333;
     text-align: left;
-    #gome-head{
+    #gome-head {
         height: 120px;
         vertical-align: middle;
         margin: 0 auto;
         // font-size: 100%;
-        #logo{
+        #logo {
             margin: 18px 40px 0 0;
             float: left;
-            a{
-                background: url(../images/register/registerlogo.png) no-repeat;
+            a {
+                background: url(../images/registerlogo.png) no-repeat;
                 width: 300px;
                 height: 62px;
                 margin-top: 16px;
@@ -36,28 +35,23 @@
                 font-size: 13px;
             }
         }
-
     }
-    .login-box{
+    .login-box {
         position: relative;
-        p{
+        p {
             position: absolute;
             top: -70px;
             right: 20px;
-
         }
     }
 }
 
-
 //中间
-.step-progress{
-   width: 1903px;
-   height: 443px;
-   background-color: lightcoral;
-
+.step-progress {
+    width: 1903px;
+    height: 443px;
+    background-color: lightcoral;
 }
-
 
 //尾部
 // .newRegister{
@@ -127,7 +121,6 @@
 //                 }
 //                 .credit-wgdj i{
 //                     background-position: -140px -180px;
-
 //                 }
 //                 .credit-report i{
 //                     background-position: -175px -180px;
@@ -136,7 +129,6 @@
 //         }
 //     }
 // }
-
 // .newRegister a:hover{
 //     color: #f5004b;
 // }

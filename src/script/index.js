@@ -1,45 +1,40 @@
 class lunBo {
     constructor() {
-        // this.news = document.querySelector('#section_1 .section_1_center ul');
-        // this.btns = document.querySelectorAll('#section_1 .section_1_center .btnlist li ');
-        // this.pics = document.querySelectorAll('#section_1 .section_1_center ul img');
         this.$ul = $('#section_1 .section_1_center ul');
-        this.picli = $('#section_1 .section_1_center ul img'); //图片
-        this.btnli = $('#section_1 .section_1_center .btnlist li'); //小按钮
+        this.pic = $('#section_1 .section_1_center ul img'); //图片
+        this.btn = $('#section_1 .btnlist li'); //小按钮
         this.left = $('#section_1 .section_1_center .slider-extra .pre p'); //左侧的按钮
         this.right = $('#section_1 .section_1_center .slider-extra .nex p'); //右侧的按钮
         this.num = 0;
-        this.$piclilength = this.picli.size();
+        this.$length = $('#section_1 .section_1_center ul img').length;
         this.timer = null;
     }
     init() {
-        // console.log(this.picli)
-        // console.log(this);
+        // console.log(this.pic)
         let _this = this;
-        this.btnli.on('mouseover', function() {
+        this.btn.on('mouseover', function() {
             _this.num = $(this).index();
             _this.tabswitch();
-
-        });
+            console.log('*****************')
+        })
         _this.leftclick();
         _this.rightclick();
         _this.autoplay();
         _this.play();
     }
     tabswitch() {
-        // console.log(this.num);
-        this.btnli.eq(this.num).addClass('active').siblings().removeClass('active');
-        this.picli.removeClass('show');
-        this.picli.eq(this.num).addClass('show');
+        this.btn.eq(this.num).addClass('active').siblings().removeClass('active');
+        this.pic.removeClass('show');
+        this.pic.eq(this.num).addClass('show');
     }
 
     leftclick() { //点击左测箭头，图片向左滚动
         let _this = this;
         this.left.on('click', function() {
-            // console.log(1);
+            console.log(1);
             _this.num--;
             if (_this.num < 0) {
-                _this.num = _this.$piclilength - 1;
+                _this.num = _this.$length - 1;
             }
             _this.tabswitch();
         });
@@ -48,7 +43,7 @@ class lunBo {
         let _this = this;
         this.right.on('click', function() {
             _this.num++;
-            if (_this.num >= _this.$piclilength) {
+            if (_this.num >= _this.$length) {
                 _this.num = 0;
             }
             _this.tabswitch();
@@ -78,6 +73,7 @@ class meiRi {
         this.section_2 = $('#section_2 .section_2_all .section_2_left .section_2_left_bottom');
     }
     init() {
+
         // let _this = this;
         $.ajax({
             url: 'http://10.31.152.30/1912/myproject/php/guomei.php',
@@ -113,6 +109,7 @@ class like {
         this.like = $('#section_5 .section_5_main .bottom');
     }
     init() {
+
         $.ajax({
             url: 'http://10.31.152.30/1912/myproject/php/guomei.php',
             dataType: 'json'
@@ -133,8 +130,6 @@ class like {
                 } else {
                     return false;
                 }
-                // str += "</ul>"
-                // this.like.html(str);
             });
             str += "</ul>"
             this.like.html(str);
@@ -142,12 +137,296 @@ class like {
     }
 }
 
-define([], function() {
-    return {
-        init: function() {
-            new lunBo().init();
-            new meiRi().init();
-            new like().init();
-        }
+//1F手机通讯
+class phone {
+    constructor() {
+        this.right = $('#section_6 .bottom .bottom_right');
     }
-});
+    init() {
+
+        $.ajax({
+            url: 'http://10.31.152.30/1912/myproject/php/guomei.php',
+            dataType: 'json'
+        }).done(($data) => {
+            let str = "<ul>";
+            $.each($data, ($index, $value) => {
+                if ($index < 10) {
+                    str += `
+                    <li>
+                    <a>
+                        <img src="${$value.url}">
+                        <p>${$value.title}</p>
+                        <span>￥${$value.price1}</span>
+                    </a>
+                    </li>
+                `;
+
+                } else {
+                    return false;
+                }
+            });
+            str += "</ul>"
+            this.right.html(str);
+        })
+    }
+}
+
+//2F电脑数码
+class computer {
+    constructor() {
+        this.right = $('#section_7 .bottom .bottom_right');
+    }
+    init() {
+
+        $.ajax({
+            url: 'http://10.31.152.30/1912/myproject/php/guomei.php',
+            dataType: 'json'
+        }).done(($data) => {
+            let str = "<ul>";
+            $.each($data, ($index, $value) => {
+                if ($index < 10) {
+                    str += `
+                    <li>
+                    <a>
+                        <img src="${$value.url}">
+                        <p>${$value.title}</p>
+                        <span>￥${$value.price1}</span>
+                    </a>
+                    </li>
+                `;
+
+                } else {
+                    return false;
+                }
+            });
+            str += "</ul>"
+            this.right.html(str);
+        })
+    }
+}
+
+//3F家用电器
+class dianQi {
+    constructor() {
+        this.right = $('#section_8 .bottom .bottom_right');
+    }
+    init() {
+
+        $.ajax({
+            url: 'http://10.31.152.30/1912/myproject/php/guomei.php',
+            dataType: 'json'
+        }).done(($data) => {
+            let str = "<ul>";
+            $.each($data, ($index, $value) => {
+                if ($index < 10) {
+                    str += `
+                    <li>
+                    <a>
+                        <img src="${$value.url}">
+                        <p>${$value.title}</p>
+                        <span>￥${$value.price1}</span>
+                    </a>
+                    </li>
+                `;
+
+                } else {
+                    return false;
+                }
+            });
+            str += "</ul>"
+            this.right.html(str);
+        })
+    }
+}
+
+
+//4F厨房卫浴
+class chuFang {
+    constructor() {
+        this.right = $('#section_9 .bottom .bottom_right');
+    }
+    init() {
+
+        $.ajax({
+            url: 'http://10.31.152.30/1912/myproject/php/guomei.php',
+            dataType: 'json'
+        }).done(($data) => {
+            let str = "<ul>";
+            $.each($data, ($index, $value) => {
+                if ($index < 10) {
+                    str += `
+                    <li>
+                    <a>
+                        <img src="${$value.url}">
+                        <p>${$value.title}</p>
+                        <span>￥${$value.price1}</span>
+                    </a>
+                    </li>
+                `;
+
+                } else {
+                    return false;
+                }
+            });
+            str += "</ul>"
+            this.right.html(str);
+        })
+    }
+}
+
+//5F国美超市
+class shopping {
+    constructor() {
+        this.right = $('#section_10 .bottom .bottom_right');
+    }
+    init() {
+
+        $.ajax({
+            url: 'http://10.31.152.30/1912/myproject/php/guomei.php',
+            dataType: 'json'
+        }).done(($data) => {
+            let str = "<ul>";
+            $.each($data, ($index, $value) => {
+                if ($index < 10) {
+                    str += `
+                    <li>
+                    <a>
+                        <img src="${$value.url}">
+                        <p>${$value.title}</p>
+                        <span>￥${$value.price1}</span>
+                    </a>
+                    </li>
+                `;
+
+                } else {
+                    return false;
+                }
+            });
+            str += "</ul>"
+            this.right.html(str);
+        })
+    }
+}
+
+
+//6F家居家装
+class jiaJu {
+
+    constructor() {
+        this.right = $('#section_11 .bottom .bottom_right');
+    }
+    init() {
+
+        $.ajax({
+            url: 'http://10.31.152.30/1912/myproject/php/guomei.php',
+            dataType: 'json'
+        }).done(($data) => {
+            let str = "<ul>";
+            $.each($data, ($index, $value) => {
+                if ($index < 10) {
+                    str += `
+                    <li>
+                    <a>
+                        <img src="${$value.url}">
+                        <p>${$value.title}</p>
+                        <span>￥${$value.price1}</span>
+                    </a>
+                    </li>
+                `;
+
+                } else {
+                    return false;
+                }
+            });
+            str += "</ul>"
+            this.right.html(str);
+        })
+    }
+}
+
+
+//7F汽车用品
+class car {
+    constructor() {
+        this.right = $('#section_12 .bottom .bottom_right');
+    }
+    init() {
+
+        $.ajax({
+            url: 'http://10.31.152.30/1912/myproject/php/guomei.php',
+            dataType: 'json'
+        }).done(($data) => {
+            let str = "<ul>";
+            $.each($data, ($index, $value) => {
+                if ($index < 10) {
+                    str += `
+                    <li>
+                    <a>
+                        <img src="${$value.url}">
+                        <p>${$value.title}</p>
+                        <span>￥${$value.price1}</span>
+                    </a>
+                    </li>
+                `;
+
+                } else {
+                    return false;
+                }
+            });
+            str += "</ul>"
+            this.right.html(str);
+        })
+    }
+}
+
+
+//热销榜
+class reXiao {
+    constructor() {
+        this.right = $('#section_13 .left_bottom');
+    }
+    init() {
+
+        $.ajax({
+            url: 'http://10.31.152.30/1912/myproject/php/guomei.php',
+            dataType: 'json'
+        }).done(($data) => {
+            let str = "<ul>";
+            $.each($data, ($index, $value) => {
+                if ($index < 5) {
+                    str += `
+                    <li>
+                    <a>
+                        <img src="${$value.url}">
+                        <p>${$value.title}</p>
+                        <span>￥${$value.price1}</span>
+                    </a>
+                    </li>
+                `;
+
+                } else {
+                    return false;
+                }
+            });
+            str += "</ul>"
+            this.right.html(str);
+        })
+    }
+}
+
+
+
+
+export {
+    lunBo,
+    meiRi,
+    like,
+    phone,
+    computer,
+    dianQi,
+    chuFang,
+    shopping,
+    jiaJu,
+    car,
+    reXiao,
+}

@@ -1,18 +1,33 @@
-require.config({
-    baseUrl: 'https://cdnjs.cloudflare.com/ajax/libs/',
-    paths: {
-        'jquery': 'jquery/1.12.4/jquery.min',
-        // 'jquery_cookie': 'jquery-cookie/1.4.1/jquery.cookie.min',
-        // 'jquery_lazy_load': 'jquery.lazyload/1.9.1/jquery.lazyload.min'
-    }
-});
+import "jquery";
+
+import "../stylesheets/index.css";
+import "../stylesheets/registry.css";
+import "../stylesheets/login.css";
 
 
-require(['jquery'], function() {
-    let targetpage = $('#current').attr('target-page');
-    if (targetpage) {
-        require([targetpage], function(targetpage) {
-            targetpage.init();
-        })
-    }
-});
+import {
+    lunBo,
+    meiRi,
+    like,
+    phone,
+    computer,
+    dianQi,
+    chuFang,
+    shopping,
+    jiaJu,
+    car,
+    reXiao,
+} from './index.js';
+
+
+new lunBo().init();
+new meiRi().init();
+new like().init();
+new phone().init();
+new computer().init();
+new dianQi().init();
+new chuFang().init();
+new shopping().init();
+new jiaJu().init();
+new car().init();
+new reXiao().init();
