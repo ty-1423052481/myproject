@@ -1,12 +1,10 @@
 class lunBo {
     constructor() {
         this.section = $('#section_1');
-        console.log("------", this.section);
         this.$ul = $('#section_1 .section_1_center ul');
         this.pic = $('#section_1 .section_1_center ul img'); //图片
         this.btn = $('#section_1 .btnlist li'); //小按钮
         this.left = $('#section_1 .section_1_center .slider-extra .pre p'); //左侧的按钮
-        console.log("-----", this.left);
         this.right = $('#section_1 .section_1_center .slider-extra .nex p'); //右侧的按钮
         this.num = 0;
         this.$length = $('#section_1 .section_1_center ul img').length;
@@ -24,6 +22,8 @@ class lunBo {
         this.random_car = $('#section_12 .bottom .bottom_right');
         this.random_reXiao = $('#section_13 .left_bottom');
 
+        //楼梯效果
+        this.louti = $('#elevator .louti li');
 
 
     }
@@ -33,20 +33,21 @@ class lunBo {
             _this.num = $(this).index();
             _this.tabswitch();
         })
-        _this.leftclick();
-        _this.rightclick();
-        _this.autoplay();
-        _this.play();
-        _this.meiRi();
-        _this.love();
-        _this.phone();
-        _this.computer();
-        _this.dianQi();
-        _this.chuFang();
-        _this.shopping();
-        _this.jiaJu();
-        _this.car();
-        _this.reXiao();
+        this.leftclick();
+        this.rightclick();
+        this.autoplay();
+        this.play();
+        this.meiRi();
+        this.love();
+        this.phone();
+        this.computer();
+        this.dianQi();
+        this.chuFang();
+        this.shopping();
+        this.jiaJu();
+        this.car();
+        this.reXiao();
+        this.lou();
     }
     tabswitch() {
         this.btn.eq(this.num).addClass('active').siblings().removeClass('active');
@@ -57,10 +58,7 @@ class lunBo {
     leftclick() { //点击左测箭头，图片向左滚动
 
         let _this = this;
-        console.log(this.left)
         this.left.on('click', function() {
-            console.log("aaaa")
-                //console.log(1);
             _this.num--;
             if (_this.num < 0) {
                 _this.num = _this.$length - 1;
@@ -379,18 +377,51 @@ class lunBo {
     }
 
 
+    //楼梯效果
+    lou() {
+        this.louti.on('click', function() { //获取楼梯，给楼梯添加点击事件
+            $(this).addClass('current').siblings().removeClass('current'); //给点击的li添加类名，并且给它的其他兄弟元素删除类名
+            let $top = $('#product .louceng').eq($(this).index()).offset().top; //获取所点击的楼梯相对应的楼层的top值，
+            $('html').animate({
+                    scrollTop: $top
+                })
+                // console.log($top)
+        });
 
+        //回到顶部
+        $('#elevator .fl_goto .flTop').on('click', function() {
+            $('html').animate({
+                    scrollTop: 0
+                }),
+                $('#elevator').css('display', 'none');
+        });
+
+        //触发滚轮事件
+        let $top = $(window).scrollTop();
+        if ($top >= 2000) {
+            $('#elevator').show();
+        } else {
+            $('elevator').hide();
+        }
+        $(window).on('scroll', function() {
+            $top = $(window).scrollTop();
+            if ($top >= 2000 && $top <= 6710) {
+                $('#elevator').show();
+            } else {
+                $('#elevator').hide();
+            }
+
+            $('#product .louceng').each(function(index, element) {
+                let $loucengTop = $('#product .louceng').eq(index).offset().top + $('#product .louceng').eq(index).height / 2;
+                if ($loucengTop > $top) {
+                    this.louti.removeClass('current');
+                    this.louti.eq(index).addClass('current');
+                }
+            })
+        })
+
+    }
 }
-
-
-
-
-
-
-
-
-
-
 
 export {
     lunBo,

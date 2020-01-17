@@ -2617,6 +2617,7 @@ $documnet_width:1200px;
 
 #elevator {
     width: 66px;
+    height: 400px;
     position: fixed;
     left: 275.5px;
     top: 54.5px;
@@ -2659,6 +2660,40 @@ $documnet_width:1200px;
             }
         }
     }
+    .fl_goto {
+        width: 66px;
+        height: 60px;
+        overflow: hidden;
+        a {
+            display: block;
+            position: absolute;
+            top: 10px;
+            height: 20px;
+            width: 17px;
+            height: 9px;
+            margin-left: 24px;
+        }
+        .flTop {
+            height: 30px;
+            position: relative;
+            cursor: pointer;
+            a {
+                background: url(../images/ui.png) -216px -52px no-repeat;
+            }
+        }
+        .fl_bottom {
+            height: 30px;
+            position: relative;
+            cursor: pointer;
+            a {
+                background: url(../images/ui.png) -216px 0 no-repeat;
+            }
+        }
+    }
+}
+
+#elevator .fl_goto li:hover a {
+    color: #f5004b;
 }
 
 #elevator .handle:hover a {
