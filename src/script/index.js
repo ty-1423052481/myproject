@@ -1,3 +1,5 @@
+//http://192.168.1.103//1912/myproject/php/guomei.php
+//http://192.168.1.103//1912/myproject/php/guomei.php
 class lunBo {
     constructor() {
         this.section = $('#section_1');
@@ -26,6 +28,7 @@ class lunBo {
         this.louti = $('#elevator .louti li');
 
 
+
     }
     init() {
         let _this = this;
@@ -48,6 +51,8 @@ class lunBo {
         this.car();
         this.reXiao();
         this.lou();
+        this.topXuan();
+        this.guomeiSeo();
     }
     tabswitch() {
         this.btn.eq(this.num).addClass('active').siblings().removeClass('active');
@@ -95,14 +100,14 @@ class lunBo {
     //数据渲染--每日必抢
     meiRi() {
         $.ajax({
-            url: 'http://10.31.152.30/1912/myproject/php/guomei.php',
+            url: 'http://192.168.1.102//1912/myproject/php/guomei.php',
             dataType: 'json'
         }).done(($data) => {
             let str = "";
             $.each($data, ($index, $value) => {
                 if ($index < 4) {
                     str += `
-                <a>
+                <a href="details.html?sid=${$value.sid}">
                     <img src="${$value.url}">
                     <span class="span1">${$value.price1}</span>
                     <span class="span2">${$value.price2}</span>
@@ -122,7 +127,7 @@ class lunBo {
     //猜你喜欢
     love() {
         $.ajax({
-            url: 'http://10.31.152.30/1912/myproject/php/guomei.php',
+            url: 'http://192.168.1.102/1912/myproject/php/guomei.php',
             dataType: 'json'
         }).done(($data) => {
             let str = "<ul>";
@@ -130,7 +135,7 @@ class lunBo {
                 if ($index < 5) {
                     str += `
                     <li>
-                    <a>
+                    <a href="details.html?sid=${$value.sid}">
                         <img src="${$value.url}">
                         <span class="span1">${$value.price1}</span>
                         <p>${$value.title}</p>
@@ -150,7 +155,7 @@ class lunBo {
     //1F手机通讯
     phone() {
         $.ajax({
-            url: 'http://10.31.152.30/1912/myproject/php/guomei.php',
+            url: 'http://192.168.1.102//1912/myproject/php/guomei.php',
             dataType: 'json'
         }).done(($data) => {
             let str = "<ul>";
@@ -158,7 +163,7 @@ class lunBo {
                 if ($index < 10) {
                     str += `
                     <li>
-                    <a>
+                    <a href="details.html?sid=${$value.sid}">
                         <img src="${$value.url}">
                         <p>${$value.title}</p>
                         <span>￥${$value.price1}</span>
@@ -178,7 +183,7 @@ class lunBo {
     //2F电脑数码
     computer() {
         $.ajax({
-            url: 'http://10.31.152.30/1912/myproject/php/guomei.php',
+            url: 'http://192.168.1.102//1912/myproject/php/guomei.php',
             dataType: 'json'
         }).done(($data) => {
             let str = "<ul>";
@@ -186,7 +191,7 @@ class lunBo {
                 if ($index < 10) {
                     str += `
                     <li>
-                    <a>
+                    <a href="details.html?sid=${$value.sid}">
                         <img src="${$value.url}">
                         <p>${$value.title}</p>
                         <span>￥${$value.price1}</span>
@@ -209,7 +214,7 @@ class lunBo {
     //3F家用电器
     dianQi() {
         $.ajax({
-            url: 'http://10.31.152.30/1912/myproject/php/guomei.php',
+            url: 'http://192.168.1.102//1912/myproject/php/guomei.php',
             dataType: 'json'
         }).done(($data) => {
             let str = "<ul>";
@@ -217,7 +222,7 @@ class lunBo {
                 if ($index < 10) {
                     str += `
                     <li>
-                    <a>
+                    <a href="details.html?sid=${$value.sid}">
                         <img src="${$value.url}">
                         <p>${$value.title}</p>
                         <span>￥${$value.price1}</span>
@@ -238,7 +243,7 @@ class lunBo {
     //4F厨房卫浴
     chuFang() {
         $.ajax({
-            url: 'http://10.31.152.30/1912/myproject/php/guomei.php',
+            url: 'http://192.168.1.102//1912/myproject/php/guomei.php',
             dataType: 'json'
         }).done(($data) => {
             let str = "<ul>";
@@ -246,7 +251,7 @@ class lunBo {
                 if ($index < 10) {
                     str += `
                     <li>
-                    <a>
+                    <a href="details.html?sid=${$value.sid}">
                         <img src="${$value.url}">
                         <p>${$value.title}</p>
                         <span>￥${$value.price1}</span>
@@ -266,7 +271,7 @@ class lunBo {
     //5F国美超市
     shopping() {
         $.ajax({
-            url: 'http://10.31.152.30/1912/myproject/php/guomei.php',
+            url: 'http://192.168.1.102//1912/myproject/php/guomei.php',
             dataType: 'json'
         }).done(($data) => {
             let str = "<ul>";
@@ -274,7 +279,7 @@ class lunBo {
                 if ($index < 10) {
                     str += `
                     <li>
-                    <a>
+                    <a href="details.html?sid=${$value.sid}">
                         <img src="${$value.url}">
                         <p>${$value.title}</p>
                         <span>￥${$value.price1}</span>
@@ -294,7 +299,7 @@ class lunBo {
     //6F家居家装
     jiaJu() {
         $.ajax({
-            url: 'http://10.31.152.30/1912/myproject/php/guomei.php',
+            url: 'http://192.168.1.102//1912/myproject/php/guomei.php',
             dataType: 'json'
         }).done(($data) => {
             let str = "<ul>";
@@ -302,7 +307,7 @@ class lunBo {
                 if ($index < 10) {
                     str += `
                     <li>
-                    <a>
+                    <a href="details.html?sid=${$value.sid}">
                         <img src="${$value.url}">
                         <p>${$value.title}</p>
                         <span>￥${$value.price1}</span>
@@ -323,7 +328,7 @@ class lunBo {
     //7F汽车用品
     car() {
         $.ajax({
-            url: 'http://10.31.152.30/1912/myproject/php/guomei.php',
+            url: 'http://192.168.1.102//1912/myproject/php/guomei.php',
             dataType: 'json'
         }).done(($data) => {
             let str = "<ul>";
@@ -331,7 +336,7 @@ class lunBo {
                 if ($index < 10) {
                     str += `
                     <li>
-                    <a>
+                    <a href="details.html?sid=${$value.sid}">
                         <img src="${$value.url}">
                         <p>${$value.title}</p>
                         <span>￥${$value.price1}</span>
@@ -351,7 +356,7 @@ class lunBo {
     //热销榜
     reXiao() {
         $.ajax({
-            url: 'http://10.31.152.30/1912/myproject/php/guomei.php',
+            url: 'http://192.168.1.102//1912/myproject/php/guomei.php',
             dataType: 'json'
         }).done(($data) => {
             let str = "<ul>";
@@ -359,7 +364,7 @@ class lunBo {
                 if ($index < 5) {
                     str += `
                     <li>
-                    <a>
+                    <a href="details.html?sid=${$value.sid}">
                         <img src="${$value.url}">
                         <p>${$value.title}</p>
                         <span>￥${$value.price1}</span>
@@ -383,9 +388,8 @@ class lunBo {
             $(this).addClass('current').siblings().removeClass('current'); //给点击的li添加类名，并且给它的其他兄弟元素删除类名
             let $top = $('#product .louceng').eq($(this).index()).offset().top; //获取所点击的楼梯相对应的楼层的top值，
             $('html').animate({
-                    scrollTop: $top
-                })
-                // console.log($top)
+                scrollTop: $top
+            })
         });
 
         //回到顶部
@@ -417,12 +421,48 @@ class lunBo {
                     this.louti.removeClass('current');
                     this.louti.eq(index).addClass('current');
                 }
-            })
+            });
         })
 
     }
-}
 
+    //顶部悬浮
+    topXuan() {
+        $(window).on('scroll', function() {
+            let $top = $(window).scrollTop();
+            if ($top >= 718) {
+                $('#ad1').stop(true).animate({
+                    top: 0,
+                })
+            } else {
+                $('#ad1').stop(true).animate({
+                    top: -80,
+                })
+            }
+        })
+    }
+
+    //seo
+    //https://apis.gome.com.cn/p/suggest?from=headSearch&module=searchSuggest&query=%E6%89%8B%E6%9C%BA&jp=true&user=83360662511&callback=suggest&_=1579449659686
+    guomeiSeo() {
+        $('#search .search_input .top input').on('input', function() {
+
+
+
+            if ($(this).val() !== '') {
+                $.ajax({
+                    url: 'https://apis.gome.com.cn/p/suggest?from=headSearch&module=searchSuggest&query=' + $(this).val() + '&jp=true&user=83360662511&callback=suggest&_=1579449659686',
+                    dataType: 'jsonp'
+                }).done((data) => {
+                    function suggest() {}
+                    new suggest();
+                })
+            }
+
+        })
+    }
+
+}
 export {
     lunBo,
 }

@@ -13,6 +13,10 @@ $documnet_width:1200px;
 #ad1 {
     width: $page_width;
     height: 80px;
+    position: fixed;
+    left: 0;
+    top: -80px;
+    z-index: 111111;
     background: rgb(204, 34, 63);
 }
 
@@ -180,26 +184,16 @@ $documnet_width:1200px;
     font-size: 14px;
 }
 
-#search .search_input .top .shangpin ul {
-    border: 1px solid #dd00a7;
-    border-top: none;
-}
-
-#search .search_input .top .shangpin li {
-    display: none;
-}
-
-#search .search_input .top .shangpin:hover li {
-    display: block;
-}
-
 #search .search_input .top input {
     display: block;
     border: none;
     outline: none;
     width: 387px;
     height: 30px;
-    // margin-top: 2px;
+}
+
+#search .search_input .top .seo {
+    width: 387px;
 }
 
 #search .search_input .top button {
@@ -816,6 +810,11 @@ $documnet_width:1200px;
                 .bottom_img {
                     position: absolute;
                     right: 0px;
+                    top: 0px;
+                }
+                .right_img {
+                    position: absolute;
+                    right: 0px;
                     top: 209px;
                 }
             }
@@ -839,6 +838,11 @@ $documnet_width:1200px;
                     float: right;
                 }
                 .bottom_img {
+                    position: absolute;
+                    right: 0px;
+                    top: 0px;
+                }
+                .right_img {
                     position: absolute;
                     right: 0px;
                     top: 209px;
@@ -1046,6 +1050,10 @@ $documnet_width:1200px;
                             float: left;
                             // padding-bottom: 20px;
                             margin-right: 12px;
+                            img {
+                                width: 306px;
+                                height: 338px;
+                            }
                         }
                     }
                 }
@@ -1061,10 +1069,9 @@ $documnet_width:1200px;
                 .bottom {
                     width: 246px;
                     height: 338px;
-                    .bottom_section {
+                    img {
+                        width: 246px;
                         height: 338px;
-                        padding: 0 15px;
-                        background: #fff;
                     }
                 }
             }
@@ -1146,7 +1153,11 @@ $documnet_width:1200px;
             left: 0;
             top: 0;
             a {
-                margin-left: -10px;
+                // margin-left: -10px;
+                margin: 0 0 0 0;
+                img {
+                    margin-left: -10px;
+                }
             }
         }
         .phone {
@@ -1317,7 +1328,10 @@ $documnet_width:1200px;
             left: 0;
             top: 0;
             a {
-                margin-left: -10px;
+                margin: 0 0 0 0;
+                img {
+                    margin-left: -10px;
+                }
             }
         }
         .phone {
@@ -1493,7 +1507,10 @@ $documnet_width:1200px;
             left: 0;
             top: 0;
             a {
-                margin-left: -10px;
+                margin: 0 0 0 0;
+                img {
+                    margin-left: -10px;
+                }
             }
         }
         .phone {
@@ -1664,7 +1681,10 @@ $documnet_width:1200px;
             left: 0;
             top: 0;
             a {
-                margin-left: -10px;
+                margin: 0 0 0 0;
+                img {
+                    margin-left: -10px;
+                }
             }
         }
         .phone {
@@ -1840,7 +1860,10 @@ $documnet_width:1200px;
             left: 0;
             top: 0;
             a {
-                margin-left: -10px;
+                margin: 0 0 0 0;
+                img {
+                    margin-left: -10px;
+                }
             }
         }
         .phone {
@@ -2016,7 +2039,10 @@ $documnet_width:1200px;
             left: 0;
             top: 0;
             a {
-                margin-left: -10px;
+                margin: 0 0 0 0;
+                img {
+                    margin-left: -10px;
+                }
             }
         }
         .phone {
@@ -2187,7 +2213,10 @@ $documnet_width:1200px;
             left: 0;
             top: 0;
             a {
-                margin-left: -10px;
+                margin: 0 0 0 0;
+                img {
+                    margin-left: -10px;
+                }
             }
         }
         .phone {

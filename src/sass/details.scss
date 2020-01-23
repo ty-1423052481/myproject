@@ -1,0 +1,322 @@
+@charset "utf-8";
+@import "compass/reset"; //编写自己的样式之前，有必要重置浏览器的默认样式
+$page_width:1903px;
+$documnet_width:1200px;
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+#header {
+    margin: 0 auto;
+    width: $page_width;
+    height: 30px;
+    background: #f8f8f8;
+}
+
+#header .inner {
+    width: $documnet_width;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#header .header_left {
+    color: #5e5e5e;
+}
+
+#header .header_left li {
+    list-style: none;
+    float: left;
+}
+
+#header .header_left li a {
+    font-size: 12px;
+    line-height: 31px;
+    text-decoration: none;
+    display: block;
+    float: left;
+}
+
+#header .header_left .header_vip {
+    width: 80px;
+    margin-right: 12px;
+    // float: left;
+}
+
+#header .header_left .header_login {
+    width: 109px;
+    float: left;
+    height: 31px;
+}
+
+#header .header_left .header_login :nth-child(1) {
+    width: 24px;
+    height: 14px;
+    margin-right: 10px;
+}
+
+#header .header_left .header_login :nth-child(1):hover {
+    color: red;
+}
+
+#header .header_left .header_login :nth-child(2) {
+    color: red;
+    width: 65px;
+    height: 14px;
+}
+
+#header .header_right {
+    float: right;
+    width: 496px;
+    height: 31px;
+}
+
+#header .header_right li {
+    float: left;
+    height: 31px;
+    list-style: none;
+}
+
+#header .header_right li a {
+    font-size: 12px;
+    color: #888;
+    text-align: center;
+    text-decoration: none;
+    line-height: 31px;
+}
+
+#header .header_right li a:hover {
+    color: red;
+}
+
+#header .header_right :nth-child(1) {
+    width: 58px;
+}
+
+#header .header_right :nth-child(2) {
+    width: 80px;
+}
+
+#header .header_right :nth-child(3) {
+    width: 80px;
+}
+
+#header .header_right :nth-child(4) {
+    width: 99px;
+}
+
+#header .header_right :nth-child(5) {
+    width: 80px;
+}
+
+#header .header_right :nth-child(6) {
+    width: 99px;
+}
+
+// 详情页
+.goodsinfo {
+    width: $page_width;
+    // height: 576px;
+    .wrap {
+        width: $documnet_width;
+        // height: 576px;
+        margin: 0 auto;
+        overflow: hidden;
+        .wrap-left {
+            width: 450px;
+            height: 532px;
+            margin-top: 20px;
+            float: left;
+            .pic-big {
+                width: 448px;
+                height: 448px;
+                border: 1px solid #d9d9d9;
+                position: relative;
+                img {
+                    width: 448px;
+                    height: 448px;
+                    float: left;
+                    z-index: 100;
+                }
+                .sf {
+                    width: 100px;
+                    height: 100px;
+                    background: orange;
+                    opacity: 0.3;
+                    position: absolute;
+                    left: 0px;
+                    top: 0px;
+                    visibility: hidden;
+                    cursor: move;
+                }
+            }
+            .pic-list {
+                height: 62px;
+                margin: 20px 0 16px;
+                position: relative;
+                .pic-btn {
+                    a {
+                        width: 15px;
+                        height: 54px;
+                        display: block;
+                        text-align: center;
+                        position: absolute;
+                        b {
+                            padding: 16px 0 0 4px;
+                            width: 13px;
+                        }
+                        em {
+                            padding: 16px 0 0 4px;
+                            width: 13px;
+                        }
+                    }
+                    .pic-btn-l {
+                        left: 0;
+                        top: 0;
+                        .j-gRbtnU {
+                            s {
+                                width: 11px;
+                                height: 21px;
+                                display: block;
+                                cursor: pointer;
+                                background: url(https://css.gomein.net.cn/gmpro/2.0.0/item/1.12.41/css/i/bg-sprite.png?__sprite) no-repeat 0 -834px;
+                            }
+                        }
+                    }
+                    .pic-btn-r {
+                        top: 0;
+                        left: 434px;
+                        .j-gRbtnD {
+                            height: 34px;
+                            display: block;
+                            cursor: pointer;
+                            i {
+                                width: 11px;
+                                height: 21px;
+                                display: block;
+                                background: url(https://css.gomein.net.cn/gmpro/2.0.0/item/1.12.41/css/i/bg-sprite.png?__sprite) no-repeat 0 -865px;
+                            }
+                        }
+                    }
+                }
+                .pic-small {
+                    width: 400px;
+                    height: 60px;
+                    position: absolute;
+                    left: 25px;
+                    top: 0;
+                    ul {
+                        width: 9999px;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        li {
+                            width: 60px;
+                            height: 60px;
+                            margin-right: 25px;
+                            float: left;
+                            text-align: center;
+                            box-sizing: border-box;
+                            border: 1px solid lightcyan;
+                        }
+                    }
+                }
+            }
+        }
+        .wrap-right {
+            width: 700px;
+            height: 532px;
+            float: left;
+            margin: 20px 0 0 30px;
+            border: 1px solid lightgreen;
+            box-sizing: border-box;
+            .hgroup {
+                height: 68px;
+                position: relative;
+                padding-bottom: 16px;
+                color: #5e5e5e;
+                font-size: 12px;
+            }
+            .prd-price-l {
+                width: 670px;
+                height: 72px;
+                padding: 20px 10px 0 20px;
+                background: #f8f8f8;
+                position: relative;
+            }
+            .prd-buttons {
+                height: 42px;
+                padding-left: 20px;
+                margin-bottom: 10px;
+                margin-top: 34px;
+                position: relative;
+                .count-wrapper {
+                    width: 46px;
+                    height: 38px;
+                    margin-right: 15px;
+                    position: relative;
+                    float: left;
+                    border: 1px solid #cccccc;
+                    input {
+                        width: 32px;
+                        height: 38px;
+                        border: none;
+                        display: block;
+                        line-height: 38px;
+                        float: left;
+                        text-align: center;
+                        color: #5e5e5e;
+                        font-size: 12px;
+                    }
+                    a {
+                        display: block;
+                        float: left;
+                        width: 13px;
+                        height: 18.5px;
+                        border-left: 1px solid #cccccc;
+                        line-height: 18px;
+                        text-align: center;
+                        border-bottom: 1px solid #cccccc;
+                        font-size: 12px;
+                        color: #5e5e5e;
+                        background-color: #f8f8f8;
+                        cursor: pointer;
+                        outline: 0;
+                    }
+                    .minus {
+                        border-bottom: none;
+                    }
+                }
+                .btn-product {
+                    width: 142px;
+                    height: 40px;
+                    display: block;
+                    cursor: default;
+                    text-align: center;
+                    line-height: 40px;
+                    background-color: #f8f8f8!important;
+                    color: #cccccc!important;
+                    border: 1px solid #e6e6e6!important;
+                    // padding: 8px 25px;
+                    margin-left: 80px;
+                }
+            }
+        }
+        .bf {
+            width: 450px;
+            height: 532px;
+            border: 1px solid #000000;
+            float: left;
+            overflow: hidden;
+            position: relative;
+            visibility: hidden;
+            .bpic {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+    }
+}

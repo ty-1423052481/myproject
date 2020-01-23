@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>注册</title>
-    <!-- <link rel="stylesheet" href="stylesheets/registry.css"> -->
 </head>
 
 <body>
+
     <!-- 头部 -->
     <div class="w990">
         <!-- 返利的导航 -->
@@ -32,11 +32,23 @@
     </div>
 
     <!-- 中间--注册 -->
-    <div style="border-top:1px solid #dd00a7;">
-        <div class="step-progress" id="container">
+    <div style="border-top:1px solid #dd00a7;" id="container">
+        <div class="step-progress">
+            <form action="http://192.168.1.102/1912/myproject/php/registry.php" method="post">
+                <fieldset>
+                    <legend>欢迎注册</legend>
+                    <span class="span1"></span>
+                    <p><label for="">用户名：</label><input type="text" name="username"></p>
+                    <span class="span2"></span>
+                    <p><label for="">密&emsp;码：</label><input type="password" name="password" id=""></p>
+                    <span class="span3"></span>
+                    <p><label for="">手机号：</label><input type="text" name="phone" id=""></p>
+                    <input type="submit" name="submit" id="" class="input111" value="注&emsp;&emsp;册">
+                </fieldset>
+            </form>
         </div>
     </div>
-    <img id="checkimg" style="display: none;" src="https://reg.gome.com.cn/images/buryImage/40427.pneg" />
+    <!-- <img id="checkimg" style="display: none;" src="https://reg.gome.com.cn/images/buryImage/40427.pneg" /> -->
 
 
     <!-- 尾部 -->
@@ -65,8 +77,7 @@
                         target="_blank">增值电信业务经营许可证</a></p>
                 <p>客服电话:4008113333&nbsp;&nbsp;<a class="interDrug" href="http://www.beian.miit.gov.cn/state/outPortal/loginPortal.action" target="_blank">沪ICP备11009419号/京ICP备 19011786号</a>&nbsp;&nbsp;<a class="interDrug" href="http://gfs11.gomein.net.cn/T12lAsBjdT1RCvBVdK.jpg"
                         target="_blank">京B2-20191290</a>&nbsp;&nbsp;<a class="interDrug" href="//www.gome.com.cn/companyinfo/" target="_blank">经营执照</a>&nbsp;&nbsp;<a class="interDrug" href="//gfs13.gomein.net.cn/T1_sDQB5C_1RCvBVdK.jpg" target="_blank">营业执照</a>&nbsp;&nbsp;
-                    <a
-                        class="interDrug" href="http://gfs13.gomein.net.cn/T1ThLXBCW_1RCvBVdK.jpg" target="_blank">出版物经营许可证</a>
+                    <a class="interDrug" href="http://gfs13.gomein.net.cn/T1ThLXBCW_1RCvBVdK.jpg" target="_blank">出版物经营许可证</a>
                 </p>
                 <p>©2000-2020&nbsp;&nbsp;国美在线电子商务有限公司版权所有&nbsp;&nbsp;<a class="interDrug tw-w-ico-wrap" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502038379" target="_blank"><i class="tw-w-mark-icon"></i>京公网安备
                             11010502038379号</a></p>
@@ -83,6 +94,7 @@
                 <em class="turst-gome"></em>
             </div>
         </div>
+        <script src="../dist/script/bundle.js"></script>
 </body>
 
 </html>

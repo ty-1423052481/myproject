@@ -1,33 +1,38 @@
 import "jquery";
 
 import "../stylesheets/index.css";
-import "../stylesheets/registry.css";
+import "../stylesheets/details.css";
 import "../stylesheets/login.css";
+import "../stylesheets/cartlist.css";
+
+import "../stylesheets/registry.css";
+
 
 
 import {
     lunBo,
-    // meiRi,
-    // like,
-    // phone,
-    // computer,
-    // dianQi,
-    // chuFang,
-    // shopping,
-    // jiaJu,
-    // car,
-    // reXiao,
 } from './index.js';
+
+import {
+    userRegistry,
+} from './registry.js';
+
+import {
+    details,
+} from './details.js';
+
+import {
+    userLogin,
+} from './login.js';
+
+
+import {
+    cartList,
+} from './cartlist';
 
 
 new lunBo().init();
-// new meiRi().init();
-// new like().init();
-// new phone().init();
-// new computer().init();
-// new dianQi().init();
-// new chuFang().init();
-// new shopping().init();
-// new jiaJu().init();
-// new car().init();
-// new reXiao().init();
+new userRegistry().init();
+new details().init();
+new userLogin().init();
+new cartList().init();
